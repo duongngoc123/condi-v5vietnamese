@@ -9,11 +9,14 @@ yum install gmp-devel -y
 ln -s /usr/lib64/libgmp.so.3  /usr/lib64/libgmp.so.10
 yum install screen wget bzip2 gcc nano gcc-c++ electric-fence sudo git libc6-dev httpd xinetd tftpd tftp-server mysql mysql-server gcc glibc-static -y
 
-
+*lưu ý cài go trên web để đc bản mới nhất ko bị lỗi phần cài go nếu theo tut này sẽ bị lỗi
 cd /tmp
 wget https://dl.google.com/go/go1.13.linux-amd64.tar.gz
 sha256sum go1.13.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.13.linux-amd64.tar.gz
+
+sau khi cài xong thì vẫn sử dụng lệnh dưới đây
+
 export PATH=$PATH:/usr/local/go/bin
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/Projects/Proj1
@@ -142,6 +145,11 @@ service firewalld stop
 service iptables stop 
 service httpd restart  
 service mariadb restart
+
+*lưu ý:
+vào dlr tạo folder release
+sau đó vào loader tạo folder bins
+sau đó build bình thường
 
 cd ~/
 chmod 777 * -R
