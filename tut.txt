@@ -2,6 +2,8 @@ TUT made by zxcr9999
 
 // Copy and paste all to ur shit vps
 
+đã làm lại bởi mình
+
 yum update -y
 yum install epel-release -y
 yum groupinstall "Development Tools" -y
