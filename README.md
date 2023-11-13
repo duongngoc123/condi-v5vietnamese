@@ -1,2 +1,2 @@
-# condi-v5-b-n-vi-t-h-a-
+# condi-v5 việt hóa
 condi đc việt hóa bởi ngọc
